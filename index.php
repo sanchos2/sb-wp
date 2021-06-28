@@ -1,4 +1,3 @@
-<h3>TEST CI/CD</h3>
 <?php
 /**
  * Front to the WordPress application. This file doesn't do anything, but loads
