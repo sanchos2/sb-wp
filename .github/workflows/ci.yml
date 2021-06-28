@@ -1,0 +1,17 @@
+name: Start CI pipline
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  check-code:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run linter
+        run: echo "Start linting"
+      - name: Run tests
+        run: echo "Start test"
