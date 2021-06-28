@@ -32,6 +32,6 @@ jobs:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
           ssh -o StrictHostKeyChecking=no  ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'ENDSSH'
-            cd secrets.WWW_DIR
+            cd /usr/share/nginx/html/wordpress
             git pull
           ENDSSH
