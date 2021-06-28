@@ -33,5 +33,5 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no  ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'ENDSSH'
             cd /usr/share/nginx/html/wordpress
-            git pull
+            git fetch
           ENDSSH
