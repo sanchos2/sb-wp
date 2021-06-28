@@ -1,4 +1,4 @@
-<h1>TEST</h1>
+<h1>TEST2</h1>
 <?php
 /**
  * Front to the WordPress application. This file doesn't do anything, but loads
