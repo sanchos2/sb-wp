@@ -34,6 +34,6 @@ jobs:
           ssh -o StrictHostKeyChecking=no  ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'ENDSSH'
             cd /usr/share/nginx/html/wordpress
             git clone git@github.com:sanchos2/sb-wp.git
-            mv -u sb-wp/* .
+            cp -uR sb-wp/* .
             rm -rf sb-wp
           ENDSSH
